@@ -602,10 +602,14 @@ function getForwards(collectedScripts) {
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 exports.components = {
-  "component---cache-dev-404-page-js": () => __webpack_require__.e(/*! import() | component---cache-dev-404-page-js */ "component---cache-dev-404-page-js").then(__webpack_require__.bind(__webpack_require__, /*! ./../../dev-404-page.js?export=default */ "./.cache/dev-404-page.js?export=default"))
+  "component---cache-dev-404-page-js": () => __webpack_require__.e(/*! import() | component---cache-dev-404-page-js */ "component---cache-dev-404-page-js").then(__webpack_require__.bind(__webpack_require__, /*! ./../../dev-404-page.js?export=default */ "./.cache/dev-404-page.js?export=default")),
+  "component---gatsby-theme-events-src-templates-event-js": () => __webpack_require__.e(/*! import() | component---gatsby-theme-events-src-templates-event-js */ "component---gatsby-theme-events-src-templates-event-js").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../../gatsby-theme-events/src/templates/event.js?export=default */ "../gatsby-theme-events/src/templates/event.js?export=default")),
+  "component---gatsby-theme-events-src-templates-events-js": () => __webpack_require__.e(/*! import() | component---gatsby-theme-events-src-templates-events-js */ "component---gatsby-theme-events-src-templates-events-js").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../../gatsby-theme-events/src/templates/events.js?export=default */ "../gatsby-theme-events/src/templates/events.js?export=default"))
 };
 exports.head = {
-  "component---cache-dev-404-page-js": () => __webpack_require__.e(/*! import() | component---cache-dev-404-page-jshead */ "component---cache-dev-404-page-jshead").then(__webpack_require__.bind(__webpack_require__, /*! ./../../dev-404-page.js?export=head */ "./.cache/dev-404-page.js?export=head"))
+  "component---cache-dev-404-page-js": () => __webpack_require__.e(/*! import() | component---cache-dev-404-page-jshead */ "component---cache-dev-404-page-jshead").then(__webpack_require__.bind(__webpack_require__, /*! ./../../dev-404-page.js?export=head */ "./.cache/dev-404-page.js?export=head")),
+  "component---gatsby-theme-events-src-templates-event-js": () => __webpack_require__.e(/*! import() | component---gatsby-theme-events-src-templates-event-jshead */ "component---gatsby-theme-events-src-templates-event-jshead").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../../gatsby-theme-events/src/templates/event.js?export=head */ "../gatsby-theme-events/src/templates/event.js?export=head")),
+  "component---gatsby-theme-events-src-templates-events-js": () => __webpack_require__.e(/*! import() | component---gatsby-theme-events-src-templates-events-jshead */ "component---gatsby-theme-events-src-templates-events-jshead").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../../gatsby-theme-events/src/templates/events.js?export=head */ "../gatsby-theme-events/src/templates/events.js?export=head"))
 };
 
 /***/ }),
