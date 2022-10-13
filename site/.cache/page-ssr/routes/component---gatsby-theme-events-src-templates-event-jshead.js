@@ -17,7 +17,46 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
 
-const Event = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("pre", null, JSON.stringify(props, null, 2));
+const getDate = (date, {
+  day = true,
+  month = true,
+  year = true
+} = {}) => date.toLocaleDateString("en-US", {
+  day: day ? "numeric" : undefined,
+  month: month ? "long" : undefined,
+  year: year ? "numeric" : undefined
+});
+
+const EventDate = ({
+  startDate,
+  endDate
+}) => {
+  const start = new Date(startDate);
+  const end = new Date(endDate);
+  const isOneDay = start.toDateString() === end.toDateString();
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("time", {
+    dateTime: start.toISOString()
+  }, getDate(start, {
+    year: isOneDay
+  })), !isOneDay && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, "-", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("time", {
+    dateTime: end.toISOString()
+  }, getDate(end, {
+    month: start.getMonth() !== end.getMonth()
+  }))));
+};
+
+const Event = ({
+  name,
+  location,
+  url,
+  startDate,
+  endDate
+}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, name, " (", location, ")"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(EventDate, {
+  startDate: startDate,
+  endDate: endDate
+})), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Website: ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+  href: url
+}, url)));
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Event);
 

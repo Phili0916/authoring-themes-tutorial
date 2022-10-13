@@ -2,7 +2,10 @@ module.exports = {
     plugins: [
         {
             resolve: "gatsby-theme-events",
-            options: {},
+            options: {
+                contentPath: "events",
+                basePath: "/events",
+            },
         },
     ],
 }
